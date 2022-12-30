@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Restaurant from "./component/basics/Restaurant"
+import bootstrap from "bootstrap"
+import MakeList from "./MakeList";
+import Wapi from "./weatherapi";
+import Axios from "./Axios";
+import {Routes,Route, BrowserRouter} from "react-router-dom"
+import Home from "./Home";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+return (
+<>
+<Home />
+
+<Routes>
+    <Route exact path="/restaurant" element = {<Restaurant/>}/>
+    <Route exact path="/news" element = {<Axios/>}/>
+    <Route exact path="/weather" element = {<Wapi/>}/>
+    <Route exact path="/makelist" element = {<MakeList/>} />
+
+</Routes>
+
+</>
+
+
+)
 }
 
 export default App;
