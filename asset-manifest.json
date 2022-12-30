@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mergedReact/static/css/main.adbefabb.css",
+    "main.js": "/mergedReact/static/js/main.1c7c823e.js",
+    "index.html": "/mergedReact/index.html",
+    "main.adbefabb.css.map": "/mergedReact/static/css/main.adbefabb.css.map",
+    "main.1c7c823e.js.map": "/mergedReact/static/js/main.1c7c823e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.adbefabb.css",
+    "static/js/main.1c7c823e.js"
+  ]
+}
